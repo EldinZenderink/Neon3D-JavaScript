@@ -9,7 +9,7 @@ Just wanted to try converting a 3d engine from c to javascript... for funz....
 0.0.1 - initial release
 
 ### Demo
-You can find a demo here: [http://eldinzenderink.github.io/SubPlayerJS/demo.html](http://eldinzenderink.github.io/SubPlayerJS/demo.html#)
+You can find a demo here: [http://eldinzenderink.github.io/Neon3D-JavaScript/](http://eldinzenderink.github.io/Neon3D-JavaScript/)
 
 ### How and Why
 The principal behind this is very simple, you have a one dimensional array containing information about nodes where lines have to be connected to. The array is interpeted like this: per 3 indexes: 1 node (x,y,z). per 6 indexes: 2 nodes (x1,y1,z1,x2,y2,z2).
