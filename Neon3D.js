@@ -172,6 +172,9 @@ var interval = setInterval(function(){
 $(document).keydown(function(e) {
     switch(e.which) {
         case 37: // left
+        if(xRotate < 0){
+        	xRotate = 359;
+        }
         xRotate--;
         console.log(xRotate);
         break;
