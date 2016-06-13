@@ -177,26 +177,41 @@ $(document).keydown(function(e) {
         break;
 
         case 38: // up
+        if(ýRotate > 359){
+        	yRotate = 0;
+        }
         yRotate++;
         console.log(yRotate);
         break;
 
         case 39: // right
+        if(xRotate > 359){
+        	xRotate = 0;
+        }
         xRotate++;
         console.log(xRotate);
         break;
 
         case 40: // down
+        if(yRotate < 0){
+        	yRotate = 359;
+        }
         yRotate--;
         console.log(yRotate);
         break;
 
         case 188:
+        if(zRotate < 0){
+        	zRotate = 359;
+        }
         zRotate--;
         console.log(zRotate);
         break;
 
-        case 191:
+        case 190:
+        if(zRotate > 359){
+        	zRotate = 0;
+        }
         zRotate++;
         console.log(zRotate);
         break;
@@ -207,6 +222,16 @@ $(document).keydown(function(e) {
         break;
 
         case 109:
+        zoom = zoom - 0.01;   
+        console.log(zoom);
+        break;
+
+        case 187:
+        zoom = zoom + 0.01;        
+        console.log(zoom);
+        break;
+
+        case 189:
         zoom = zoom - 0.01;   
         console.log(zoom);
         break;
