@@ -278,6 +278,19 @@ function Rotate(){
 	}
 }
 
-setInterval(function(){if(isRotating){xRotate++; yRotate++; zRotate++;}}, 20);
+setInterval(function(){if(isRotating){
+	if(xRotate > 359){
+    	xRotate = 0;
+    }
+    if(zRotate > 359){
+    	zRotate = 0;
+    }
+ 	if(yRotate > 359){
+    	yRotate = 0;
+    }
+	xRotate++; yRotate++; zRotate++;
+	
+    $("#info").html("x: " + xRotate + ", y:" + yRotate + ", z:" + zRotate + ", zoom: " + zoom);
+}}, 20);
 
 
