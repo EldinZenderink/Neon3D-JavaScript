@@ -177,7 +177,7 @@ $(document).keydown(function(e) {
         break;
 
         case 38: // up
-        if(ýRotate > 359){
+        if(yRotate > 359){
         	yRotate = 0;
         }
         yRotate++;
