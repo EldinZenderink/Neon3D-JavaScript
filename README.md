@@ -2,6 +2,8 @@
 
 Neon3D - JavaScript is a offspring I created of Neon3D. Neon3D is a college project build upon a FPGA, but I wanted to try out the flexibility of this code (literally copy pasting) form c to javascript. Just some minor tweaks were needed and I could use an already existing draw line function (SVG) in html5/javascript which sped things up a tiny bit. It is still software mode though. So do not expect any amazing performance. It's actually kinda poor...
 
+Original college project: [https://github.com/wfikkert/Neon3D](https://github.com/wfikkert/Neon3D)
+
 ### Goal
 Just wanted to try converting a 3d engine from c to javascript... for funz....
 
